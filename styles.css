@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --font-family: "Figtree", sans-serif;
+  --color-gray-950: #111;
+  --color-white: #fff;
+  --color-yellow: #f4d04e;
+  --color-gray-500: #6b6b6b;
+}
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-family: "Figtree", sans-serif;
+  background: var(--color-yellow);
+  margin: 0;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--color-gray-950);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 8px 8px 0 0 #000;
+  background: var(--color-white);
+  box-sizing: border-box;
+}
+
+.card-image {
+  width: 336px;
+  margin-bottom: 24px;
+}
+
+.card-descr {
+  box-sizing: border-box;
+  width: 336px;
+  height: 194px;
+  margin: 0 0 24px 0;
+}
+
+.card-descr-category {
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 4px 12px;
+  width: 82px;
+  height: 29px;
+  margin: 0 0 12px 0;
+  background: var(--color-yellow);
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-gray-950);
+}
+
+.card-descr-date {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-gray-950);
+  margin: 0 0 12px 0;
+}
+
+.card-descr-title {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--color-gray-950);
+  margin: 0 0 12px 0;
+}
+
+.card-descr-title:hover,
+.card-descr-title:focus {
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+
+.card-descr-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-gray-500);
+  margin: 0;
+}
+
+.card-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 32px;
+}
+
+.card-author-name {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-gray-950);
+  margin-left: 12px;
+}
